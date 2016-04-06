@@ -78,7 +78,7 @@ var goPrev = function(){
 
     $("#slide" + currentSlide).stop().animate({"margin-left": bw}).fadeOut('slow');
     
-    $("#slide" + next).stop().animate({"margin-left": bw},0).fadeIn('slow').animate({"margin-left": "0px"});
+    $("#slide" + next).stop().animate({"margin-left": "-" + bw},0).fadeIn('slow').animate({"margin-left": "0px"});
 
   }
   else{
@@ -96,7 +96,7 @@ var goNext = function(){
 
   if(animation === "fade"){
    
-    $("#slide" + currentSlide).stop().animate({"margin-left": bw}).fadeOut('slow');
+    $("#slide" + currentSlide).stop().animate({"margin-left": "-" + bw }).fadeOut('slow');
     
     $("#slide" + next).stop().animate({"margin-left": bw},0).fadeIn('slow').animate({"margin-left": "0px"});
   
